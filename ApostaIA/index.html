@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ApostaIA - Simulador de Apostas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">ApostaIA</div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#" id="simularBtn">Simular Aposta</a></li>
+          <li>
+            <a href="https://premierbet.co.ao" target="_blank">Premier Bet</a>
+          </li>
+          <li>
+            <a href="https://elephantbet.co.ao" target="_blank">Elephant Bet</a>
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Simulador de Apostas</h2>
+        <label for="jogoModal">Escolha o jogo:</label>
+        <select id="jogoModal">
+          <option value="">Selecione...</option>
+          <option value="roleta">Roleta</option>
+          <option value="cara_ou_coroa">Cara ou Coroa</option>
+          <option value="futebol">Futebol 2x1</option>
+        </select>
+        <div id="inputsModal"></div>
+        <button id="calcularModal">Calcular Probabilidade</button>
+        <div id="resultadoModal"></div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <main>
+      <section class="hero">
+        <h1>Bem-vindo ao ApostaIA</h1>
+        <p>
+          Simule suas apostas, descubra probabilidades e jogue com inteligência!
+        </p>
+        <button id="simularHero">Simular Aposta</button>
+      </section>
+
+      <!-- iFrame -->
+
+      <section class="aposta-real">
+        <h2>Casa de Apostas Integrada</h2>
+        <p>
+          Explore uma casa de apostas real enquanto utiliza o simulador
+          inteligente. As sugestões da ApostaIA não garantem ganhos.
+        </p>
+
+        <div class="iframe-container">
+          <iframe
+            src="https://www.youtube.com/embed/cJK705GpFBM?si=7ZG7liVdMqKgRJlB"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+    
+        </div>
+
+        <small>
+          ⚠️ Jogo responsável: a IA apenas analisa probabilidades, não elimina o
+          acaso.
+        </small>
+      </section>
+
+      <section class="destaques">
+        <div class="card">
+          <h3>Roleta</h3>
+          <p>
+            Probabilidades, valor esperado e estratégias inteligentes para suas
+            apostas.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Cara ou Coroa</h3>
+          <p>Simples e rápido, veja a chance de vitória antes de apostar.</p>
+        </div>
+        <div class="card">
+          <h3>Futebol 2x1</h3>
+          <p>
+            Análise de probabilidades, odds e sugestões baseadas em histórico.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        &copy; <a href="https://github.com/kernel-unikiv/">KERNEL</a>. Todos os
+        direitos reservados.
+      </p>
+      <p>Desenvolvido por Mendes Eduarda</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

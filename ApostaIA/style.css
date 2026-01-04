@@ -1,0 +1,244 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1f2937;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav .hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-content label, 
+.modal-content select, 
+.modal-content input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 12px;
+    background-color: #10b981;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.modal-content button:hover {
+    background-color: #059669;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* HERO MAIN */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #10b981;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #10b981;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #f3f4f6;
+}
+
+/* DESTAQUES */
+.destaques {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.destaques .card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.destaques .card h3 {
+    margin-bottom: 15px;
+    color: #10b981;
+}
+
+.destaques .card p {
+    font-size: 16px;
+}
+
+/*Iframe*/
+
+/* SEÇÃO IFRAME CASA DE APOSTA */
+.aposta-real {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.aposta-real h2 {
+    font-size: 28px;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.aposta-real p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    font-size: 16px;
+    color: #4b5563;
+}
+
+.iframe-container {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.aposta-real small {
+    display: block;
+    margin-top: 10px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .iframe-container {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .iframe-container {
+        height: 280px;
+    }
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #1f2937;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+    header nav ul.menu { display: none; flex-direction: column; background-color: #1f2937; position: absolute; top: 60px; right: 0; width: 200px; }
+    header nav ul.menu.show { display: flex; }
+    header nav .hamburger { display: block; }
+    .destaques { flex-direction: column; align-items: center; }
+}
